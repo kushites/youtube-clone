@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <style>
+        #nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2020;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    display:flex;
+    background-color: black;
+    justify-content: end;
+    align-items: center;
+}
+#nav #youtube-icon{
+    height:100px;
+    width:200px
+   
+}
+#nav div{
+    padding-right:20px
+}
+#nav img{
+   height: 40px;
+   width:40px;
+   border-radius:50%;
+   cursor:pointer
+}
+#searchbar{
+    width:60%;
+    padding:15px
+}
+#submit{
+    padding:15px;
+    background-color: black;
+    color:white;
+}
+#search{
+    position:auto;
+    width:60%;
+    padding:25px
+}
+.fas:first-child{
+position:fixed;
+top:40%
+  
+}
+#master{
+    margin-top:120px;
+    display:flex;
+}
+#bigpage{
+  width:100%;  
+  height:100%;
+flex:3
+}
+#relatable{
+    flex:1;
+    overflow:scroll;
+}
+#relatable iframe{
+    height:180px;
+    width:320px;
+}
+
+    </style>
+<script src="https://kit.fontawesome.com/73b65dc76b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="nav">
+        <div><i  class="fas fa-bars" style="color:white"></i><img onclick=window.location.href="index.html" src="https://9to5google.com/wp-content/uploads/sites/4/2017/08/youtube_logo_dark.jpg?quality=82&strip=all" alt=""id="youtube-icon"></div>
+        <div></div>
+        <div id="search"><input type="text" id="searchbar"><button onclick="searching()" id="submit"><i class="fa-solid fa-search" style="font-size:15px"></i></button><i class="fa-solid fa-microphone" style="color:blue;font-size:25px;padding-left:25px"></i></div>
+       <div><img src="https://stoic-goldwasser-611d2c.netlify.app/images/upload.png" alt="" srcset=""></div>
+        <div><img src="https://stoic-goldwasser-611d2c.netlify.app/images/more.png" alt="" srcset=""></div>
+        <div><img src="https://stoic-goldwasser-611d2c.netlify.app/images/notification.png" alt="" srcset=""></div>
+        <div><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlqw8wFtYjs_brsD_nsb_HN_fw8sc98divz16c8Th5YfVC_Vnp"  alt=""></div>
+    </div>
+<div id="master">
+    <div id="bigpage"><iframe width="560" height="315" src="https://www.youtube.com/embed/Y2Oj9gllHno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div id="relatable"></div>
+</div>
+</body>
+</html>
+<script src="show.js"></script>
