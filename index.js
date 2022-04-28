@@ -55,7 +55,7 @@ const appending= async()=>{
 
  let arr=[]
  function onanother(el){
-   JSON.parse(localStorage.getItem("video"))=null
+   arr=[]
      console.log(el)
     arr.push(el)
     localStorage.setItem("video",JSON.stringify(arr))
