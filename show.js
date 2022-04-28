@@ -7,7 +7,7 @@ function app(data){
   
        
             document.querySelector("#bigpage").innerHTML=`<iframe width="950" height="400" src="https://www.youtube.com/embed/${data[0].id.videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                            <h4>${data[0].snippet.tile}</h4>
+                                                            <h4>${data[0].snippet.title}</h4>
                                                             <p>${data[0].snippet.description}</p>`
      
         
@@ -43,3 +43,10 @@ const appending= async()=>{
     })
 
 }
+let arr=[]
+ function onanother(el){
+     console.log(el)
+    arr.push(el)
+    localStorage.setItem("video",JSON.stringify(arr))
+    window.location.href="show.html"
+ }
